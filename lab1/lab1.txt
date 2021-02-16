@@ -1,0 +1,23 @@
+Part 1: Unix
+Answer these questions in your lab1.txt, you are encouraged to ask your good friend Google-Search for the answers!  
+
+1) How could you copy all the files from the current directory to its parent directory?
+A: cp path-of-child-folder/* path-of-parent-folder
+Source: https://askubuntu.com/questions/1192190/how-can-i-copy-the-contents-of-a-child-folder-to-its-parent-folder-using-command
+
+2) How could you move all the files that end with an extension *.h in your home directory to the current directory without knowing the full path to the current directory [Hint: use a shortcut for the home directory and current directory.]
+A: mv ~/*.h .
+Source: https://askubuntu.com/questions/25813/commandline-shortcut-for-current-directory-similar-to-for-home-directory
+
+3) Write a command sequence to make a directory called 'backup' underneath the current directory, then copy all the files in the current directory to 'backup'
+A: 
+mkdir ./backup
+cp ./* ./backup
+
+4) If a program becomes unresponsive, what two Linux commands could you use to identify the faulty program number and terminate it?
+A: pidof, sudo kill
+Source: https://itsfoss.com/how-to-find-the-process-id-of-a-program-and-kill-it-quick-tip/
+
+5) When you ran grep, the version of Ubuntu you're currently running was listed. What version is it? (It is of the form XX.XX.X where each X is a digit).
+A: 16.04.1
+Source: Prelab
